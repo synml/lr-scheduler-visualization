@@ -15,7 +15,7 @@ class Model(torch.nn.Module):
 model = Model()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
-# scheduler에 다양한 lr_scheduler 객체를 할당할 수 있다.
+# Various lr_scheduler objects can be assigned to the scheduler.
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.8)
 scheduler_name = scheduler.__class__.__name__
 
