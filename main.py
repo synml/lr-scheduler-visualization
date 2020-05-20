@@ -6,17 +6,17 @@ class Model(torch.nn.Module):
 
     def __init__(self):
         super(Model, self).__init__()
-        self.linear1 = torch.nn.Linear(5, 3)
+        self.linear = torch.nn.Linear(3, 1)
 
     def forward(self, x):
-        return self.linear1(x)
+        return self.linear(x)
 
 
 model = Model()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # Various lr_scheduler objects can be assigned to the scheduler.
-scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=8, gamma=0.8)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=9, gamma=0.8)
 scheduler_name = scheduler.__class__.__name__
 
 lr_list = []
@@ -30,6 +30,6 @@ for epoch in range(100):
 
 plt.title(scheduler_name)
 plt.xticks(range(0, 100, scheduler.step_size))
-plt.ylim(0, 0.0011)
+plt.ylim(0, optimizer.defaults['lr'] + optimizer.defaults['lr'] / 10)
 plt.plot(lr_list)
 plt.show()
