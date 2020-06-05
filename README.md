@@ -72,11 +72,11 @@
   - Windows10 20H1 (Cross platform)
   - Miniconda
 - Setting up develop environment
-  - Anaconda 또는 Miniconda가 설치되어 있는지 확인하세요.
-  - 새 가상환경을 만들고 위의 라이브러리를 설치하세요.
-  - 리포지토리를 클론, 포크하거나 압축파일로 코드를 다운로드하세요.
-  - IDE 또는 텍스트 에디터로 다운로드한 파일을 여세요.
-  - 코딩 시작~!
+  - Make sure you have Anaconda or Miniconda installed.
+  - Create a new virtual environment and install the above library.
+  - Download the code to your repository as a clone, fork or ZIP file.
+  - Open the downloaded file with your IDE or text editor.
+  - Start coding~!
 
 ## Developer information and credits
 
