@@ -15,6 +15,7 @@ model = Model()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
 # Various lr_scheduler objects can be assigned to the scheduler.
+# To use a different scheduler, change one line of code below.
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=9, gamma=0.8)
 scheduler_name = scheduler.__class__.__name__
 
