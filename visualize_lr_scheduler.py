@@ -21,9 +21,7 @@ scheduler_name = scheduler.__class__.__name__
 num_epoch = 100
 lr_list = []
 for epoch in range(num_epoch):
-    lr = None
-    for param_group in optimizer.param_groups:
-        lr = param_group['lr']
+    lr = optimizer.param_groups[0]['lr']
     print('epoch: {:3d},   lr: {:.8f}'.format(epoch, lr))
     lr_list.append(lr)
     scheduler.step()
