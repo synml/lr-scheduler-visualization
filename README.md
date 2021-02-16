@@ -22,7 +22,7 @@
 
 ## Build Status
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/LulinPollux/lr-scheduler-visualization) ![GitHub last commit](https://img.shields.io/github/last-commit/LulinPollux/lr-scheduler-visualization) ![GitHub](https://img.shields.io/github/license/LulinPollux/lr-scheduler-visualization) 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/clovadev/lr-scheduler-visualization) ![GitHub last commit](https://img.shields.io/github/last-commit/clovadev/lr-scheduler-visualization) ![GitHub](https://img.shields.io/github/license/clovadev/lr-scheduler-visualization) 
 
 ## How to Install
 
